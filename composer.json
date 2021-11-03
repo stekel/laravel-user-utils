@@ -24,7 +24,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "stekel\\LaravelUserUtils\\LaravelUserUtilsServiceProvider"
+                "stekel\\LaravelUserUtils\\Laravel\\Providers\\LaravelUserUtilsServiceProvider"
             ],
             "aliases": {}
         }

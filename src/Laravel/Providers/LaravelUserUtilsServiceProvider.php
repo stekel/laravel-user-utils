@@ -1,6 +1,6 @@
 <?php
 
-namespace stekel\LaravelUserUtils;
+namespace stekel\LaravelUserUtils\Laravel\Providers;
 
 use Illuminate\Support\ServiceProvider;
 use stekel\LaravelUserUtils\Laravel\Console\ResetPasswords;
@@ -13,7 +13,7 @@ class LaravelUserUtilsServiceProvider extends ServiceProvider
      * @var bool
      */
     protected $defer = true;
-    
+
     /**
      * Bootstrap the application services.
      *
@@ -22,7 +22,7 @@ class LaravelUserUtilsServiceProvider extends ServiceProvider
     public function boot()
     {
         if ($this->app->runningInConsole()) {
-            
+
             $this->commands([
                 ResetPasswords::class,
             ]);
@@ -36,9 +36,9 @@ class LaravelUserUtilsServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        
+
     }
-    
+
     /**
      * Get the services provided by the provider.
      *
